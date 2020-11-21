@@ -14,22 +14,22 @@
     <div class="outer_box">
         <h1 id="application" style="color: black;">Application Form</h1>
 
-
-        <!-- ###################### GENERAL INFORMATION ##############  -->
-        <div class="form_container1">
-
-
-            <!-- ************** PHOTO ************  -->
-            <div class="icon">
-                <input type="image" src="./Img/icon.png" alt="Submit"><br>
-                <!-- <label for="First_Name">Upload photo:</label> -->
-            </div>
+        <form action="">
+            <!-- ###################### GENERAL INFORMATION ##############  -->
+            <div class="form_container1">
 
 
-            <h2 style="color: black;"><u>General Information</u></h2>
+                <!-- ************** PHOTO ************  -->
+                <div class="icon">
+                    <input type="image" src="./Img/icon.png" alt="Submit"><br>
+                    <!-- <label for="First_Name">Upload photo:</label> -->
+                </div>
 
 
-            <form action="">
+                <h2 style="color: black;"><u>General Information</u></h2>
+
+
+
 
                 <!-- **************FIRST NAME************  -->
                 <div class="form-group">
@@ -51,18 +51,13 @@
 
                 <!-- ********************* GENDER*************************  -->
                 <div>
-                    <label for="Gender">Gender:</label><br>
-                    <class class="radio-container">
-
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label><br>
-
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label><br>
-
-                        <input type="radio" id="other" name="gender" value="other">
-                        <label for="other">Other</label>
-                    </class>
+                    <label for="Gender">Gender:</label>
+                    <input list="Gender" placeholder="Choose your option">
+                    <datalist id="Gender">
+                        <option value="Female"></option>
+                        <option value="Male"></option>
+                        <option value="Other"></option>
+                    </datalist>
                 </div>
 
                 <!-- ******************** RELIGION ************************** -->
@@ -110,16 +105,14 @@
                 <!-- **************INCOME************  -->
                 <div class="form-group">
                     <label for="Income">Annual Family Income:</label>
-                    <input type="number" id="Income" name="Income" required>
+                    <input type="text" id="Income" name="Income" required>
                 </div>
-            </form>
-        </div>
+            </div>
 
 
-        <!-- ########################### ACADEMIC DETAILS ################ -->
-        <div class="form_container2">
-            <h2 style="color: black;"><u>Academic Details</u></h2>
-            <form action="">
+            <!-- ########################### ACADEMIC DETAILS ################ -->
+            <div class="form_container2">
+                <h2 style="color: black;"><u>Academic Details</u></h2>
                 <!-- **************INSTITUTE NAME************  -->
                 <div class="form-group">
                     <label for="Institute_Name">Institute Name:</label>
@@ -156,14 +149,12 @@
                     <label for="Year_Of_Passing">12th Class Year Of Passing:</label>
                     <input type="number" id="Year_Of_Passing" name="Year_Of_Passing" required>
                 </div>
-            </form>
-        </div>
+            </div>
 
 
-        <!-- ########################### BANK DETAILS ################ -->
-        <div class="form_container3">
-            <h2 style="color: black;"><u>Bank Details</u></h2>
-            <form action="">
+            <!-- ########################### BANK DETAILS ################ -->
+            <div class="form_container3">
+                <h2 style="color: black;"><u>Bank Details</u></h2>
 
                 <!-- **************IFSC CODE************  -->
                 <div class="form-group">
@@ -177,13 +168,10 @@
                     <label for="Bank_Account_Number">Bank Account Number:</label>
                     <input type="text" id="Bank_Account_Number" name="Bank_Account_Number" required>
                 </div>
-
-            </form>
-        </div>
+            </div>
 
 
-        <!-- ########################### BUTTON ################ -->
-        <form action="">
+            <!-- ########################### BUTTON ################ -->
             <button type="button" onclick="alert('Your Form Has Been Submitted')">Save & Continue</button>
         </form>
 </body>
