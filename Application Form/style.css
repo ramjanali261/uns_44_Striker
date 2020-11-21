@@ -75,51 +75,12 @@ button:hover {
 }
 
 .form_container1:hover {
-    transition-property: transform, background-color;
-    transition-duration: 1s;
-}
-
-.form_container2 {
-    border: 2px solid black;
-    padding: 25px;
-    margin: 20px auto;
-    display: block;
-    border: 1px solid rgb(26, 25, 23);
-    color: rgb(12, 12, 12);
-    width: 83%;
-    border-radius: 10px;
-    margin-bottom: 36px;
-    background-color: rgba(23, 23, 24, 0.2);
-}
-
-.form_container2:hover {
-    background-color: rgba(23, 23, 24, 0.2);
-    transition-property: transform, background-color;
-    transition-duration: 1s;
-}
-
-.form_container3 {
-    border: 2px solid black;
-    padding: 25px;
-    margin: 20px auto;
-    display: block;
-    border: 1px solid rgb(26, 25, 23);
-    color: rgb(12, 12, 12);
-    width: 83%;
-    border-radius: 10px;
-    margin-bottom: 36px;
-    background-color: rgba(23, 23, 24, 0.2);
-}
-
-.form_container3:hover {
     background-color: rgba(23, 23, 24, 0.2);
     transition-property: transform, background-color;
     transition-duration: 1s;
 }
 
 .form-group input {
-    /* text-align: center; */
-    /* display: block; */
     width: 250px;
     padding: 4px;
     border: 1px solid black;
