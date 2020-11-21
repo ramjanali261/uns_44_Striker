@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(images/5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #D5DBDB;
+    width: 540px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.center h2{
+    background: linear-gradient(to bottom right, #7f8c8d 37%, #ccffff 88%);
+    text-align: center;
+    margin: 0%;
+    color: #023583;
+    padding: 15px 20px 20px;
+    border-bottom: 2px solid #94BBF6;
+    border-radius: 10px;
+
+}
+.center form{
+    padding: 0px 35px;
+    box-sizing: border-box;
+}
+form .text_box{
+    position: relative;
+    margin: 35px 0;
+    border-bottom: 2px solid #94BBF6;
+}
+.text_box input{
+    padding: 0 5px;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.text_box label{
+    position: absolute;
+    top: 50%;
+    color:#2773E7;
+    transform: translateY(-50%);
+    left: 5px;
+    font-size: 15px;
+    pointer-events: none;
+    transition: .5s;
+}
+.text_box span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:#76A8F8;
+    transition: .5s;
+}
+.text_box input:focus ~ label,
+.text_box input:valid ~ label{
+    top: -12px;
+    color: #0F65EF;
+}
+.text_box input:focus ~ span::before,
+.text_box input:valid ~ span::before{
+width: 100%;
+}
+input[type="register"]{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: 1px solid;
+    border-radius:30px;
+    background: #0D5BEA;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+input[type="register"]:hover{
+    border-color: #07357B;
+    transition: .5s;
+}
+.login{
+    margin: 20px 0px ;
+    text-align: center;
+    font-size: 15px;
+    color:#2773E7;
+}
+.login a{
+    color: #07357B;
+    text-decoration: none;
+}
+.login a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
