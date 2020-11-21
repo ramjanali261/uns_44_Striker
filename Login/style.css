@@ -4,21 +4,24 @@ body{
     font-family: montserrat;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to bottom right, #6600ff 37%, #ffff99 88%);
+    background-image: url(5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .center{
     position: relative;
-    top: 0%;
+    top: 50%;
     left: 50%;
-    background: white;
+    background: #D5DBDB;
     width: 540px;
     height: 400px;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     border-radius: 10px;
 }
 .center h1{
-    background: linear-gradient(to bottom, #00ccff 12%, #ffffff 98%);
-     text-align: center;
+    background: linear-gradient(to bottom right, #7f8c8d 37%, #ccffff 88%);
+    text-align: center;
     margin-top: 0% ;
     color: #023583;
     padding: 10px 10px 10px;
@@ -46,7 +49,7 @@ form .text_box{
 .text_box label{
     position: absolute;
     top: 50%;
-    color:#76A8F8 ;
+    color:#2773E7 ;
     transform: translateY(-50%);
     left: 5px;
     font-size: 15px;
@@ -65,7 +68,7 @@ form .text_box{
 }
 .text_box input:focus ~ label,
 .text_box input:valid ~ label{
-    top: -4px;
+    top: -12px;
     color: #0F65EF;
 }
 .text_box input:focus ~ span::before,
@@ -75,7 +78,7 @@ width: 100%;
 .pass{
     margin: -5px 0 20px 5px;
     cursor: pointer;
-    color: #45CBEC;
+    color: #2773E7;
 }
 .pass:hover{    
     color: #0746A6;
@@ -101,7 +104,7 @@ input[type="submit"]:hover{
     margin: 20px 0px ;
     text-align: center;
     font-size: 15px;
-    color:#17758C;
+    color:#2773E7;
 }
 .signup a{
     color: #07357B;
