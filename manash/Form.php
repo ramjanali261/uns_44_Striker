@@ -119,22 +119,22 @@ $encryption4 = openssl_encrypt($simple_string4, $ciphering, $encryption_key, $op
     <div class="outer_box">
         <h1 id="application" style="color: black;">Application Form</h1>
 
-
-        <!-- ###################### GENERAL INFORMATION ##############  -->
-        
-
-
-            <!-- ************** PHOTO ************  -->
-            <div class="icon">
-                <input type="image" src="images/icon.png" alt="Submit"><br>
-                <!-- <label for="First_Name">Upload photo:</label> -->
-            </div>
+        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+            <!-- ###################### GENERAL INFORMATION ##############  -->
+            <div class="form_container1">
 
 
-            <h2 style="color: black;"><u>General Information</u></h2>
+                <!-- ************** PHOTO ************  -->
+                <div class="icon">
+                    <input type="image" src="images/icon.png" alt="Submit"><br>
+                    <!-- <label for="First_Name">Upload photo:</label> -->
+                </div>
 
 
-            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+                <h2 style="color: black;"><u>General Information</u></h2>
+
+
+
 
                 <!-- **************FIRST NAME************  -->
                 <div class="form-group">
@@ -156,18 +156,13 @@ $encryption4 = openssl_encrypt($simple_string4, $ciphering, $encryption_key, $op
 
                 <!-- ********************* GENDER*************************  -->
                 <div>
-                    <label for="Gender">Gender:</label><br>
-                    <class class="radio-container">
-
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label><br>
-
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label><br>
-
-                        <input type="radio" id="other" name="gender" value="other">
-                        <label for="other">Other</label>
-                    </class>
+                    <label for="Gender">Gender:</label>
+                    <input list="Gender" placeholder="Choose your option">
+                    <datalist id="Gender">
+                        <option value="Female"></option>
+                        <option value="Male"></option>
+                        <option value="Other"></option>
+                    </datalist>
                 </div>
 
                 <!-- ******************** RELIGION ************************** -->
@@ -189,14 +184,14 @@ $encryption4 = openssl_encrypt($simple_string4, $ciphering, $encryption_key, $op
                 <!-- ******************* CATEGORY **************  -->
                 <div class="form-group">
                     <label for="Category">Community/Category:</label>
-                    <input list="Category" required name="category">
+                    <input list="Category" required>
                     <datalist id="Category">
-                        <option name="category" value="SC"></option>
-                        <option name="category" value="ST"></option>
-                        <option name="category" value="OBC"></option>
-                        <option name="category" value="GENERAL"></option>
-                        <option name="category" value="ST-PVGT"></option>
-                        <option name="category" value="APST"></option>
+                        <option value="SC"></option>
+                        <option value="ST"></option>
+                        <option value="OBC"></option>
+                        <option value="GENERAL"></option>
+                        <option value="ST-PVGT"></option>
+                        <option value="APST"></option>
                     </datalist>
                 </div>
 
@@ -215,16 +210,14 @@ $encryption4 = openssl_encrypt($simple_string4, $ciphering, $encryption_key, $op
                 <!-- **************INCOME************  -->
                 <div class="form-group">
                     <label for="Income">Annual Family Income:</label>
-                    <input type="number" id="Income" name="Income" required>
+                    <input type="text" id="Income" name="Income" required>
                 </div>
-            
-        
+            </div>
 
 
-        <!-- ########################### ACADEMIC DETAILS ################ -->
-        
-            <h2 style="color: black;"><u>Academic Details</u></h2>
-        
+            <!-- ########################### ACADEMIC DETAILS ################ -->
+            <div class="form_container1">
+                <h2 style="color: black;"><u>Academic Details</u></h2>
                 <!-- **************INSTITUTE NAME************  -->
                 <div class="form-group">
                     <label for="Institute_Name">Institute Name:</label>
@@ -261,14 +254,12 @@ $encryption4 = openssl_encrypt($simple_string4, $ciphering, $encryption_key, $op
                     <label for="Year_Of_Passing">12th Class Year Of Passing:</label>
                     <input type="number" id="Year_Of_Passing" name="Year_Of_Passing" required>
                 </div>
-            
-        
+            </div>
 
 
-        <!-- ########################### BANK DETAILS ################ -->
-        
-            <h2 style="color: black;"><u>Bank Details</u></h2>
-            
+            <!-- ########################### BANK DETAILS ################ -->
+            <div class="form_container1">
+                <h2 style="color: black;"><u>Bank Details</u></h2>
 
                 <!-- **************IFSC CODE************  -->
                 <div class="form-group">
@@ -282,15 +273,12 @@ $encryption4 = openssl_encrypt($simple_string4, $ciphering, $encryption_key, $op
                     <label for="Bank_Account_Number">Bank Account Number:</label>
                     <input type="text" id="Bank_Account_Number" name="Bank_Account_Number" required>
                 </div>
-
-                <input type="submit" name="submit" value="Login">
-
-            </form>
-        </div>
+            </div>
 
 
-        <!-- ########################### BUTTON ################ -->
-        
+            <!-- ########################### BUTTON ################ -->
+            <input type="submit" name="submit" value="Login">
+        </form>
 </body>
 
 </html>
