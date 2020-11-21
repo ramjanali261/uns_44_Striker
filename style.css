@@ -2,9 +2,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: montserrat;
-    height: 100vmin;
+    height: 100vh;
     overflow: hidden;
-    background-image: url(/4.jpg);
+    background: linear-gradient(to bottom right, #6600ff 37%, #ffff99 88%);
 }
 .center{
     position: relative;
