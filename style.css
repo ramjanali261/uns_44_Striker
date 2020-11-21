@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    height: 100vmin;
+    overflow: hidden;
+    background-image: url(/4.jpg);
+}
+.center{
+    position: relative;
+    top: 0%;
+    left: 50%;
+    background: white;
+    width: 540px;
+    height: 400px;
+    transform: translate(-50%, 50%);
+    border-radius: 10px;
+}
+.center h1{
+    background: linear-gradient(to bottom, #00ccff 12%, #ffffff 98%);
+     text-align: center;
+    margin-top: 0% ;
+    color: #023583;
+    padding: 10px 10px 10px;
+    border-bottom: 2px solid #94BBF6;
+    border-radius: 10px;
+
+}
+.center form{
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+form .text_box{
+    position: relative;
+    margin: 35px 0;
+    border-bottom: 2px solid #94BBF6;
+}
+.text_box input{
+    padding: 0 5px;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+.text_box label{
+    position: absolute;
+    top: 50%;
+    color:#76A8F8 ;
+    transform: translateY(-50%);
+    left: 5px;
+    font-size: 15px;
+    pointer-events: none;
+    transition: .5s;
+}
+.text_box span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:#76A8F8;
+    transition: .5s;
+}
+.text_box input:focus ~ label,
+.text_box input:valid ~ label{
+    top: -4px;
+    color: #0F65EF;
+}
+.text_box input:focus ~ span::before,
+.text_box input:valid ~ span::before{
+width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    cursor: pointer;
+    color: #45CBEC;
+}
+.pass:hover{    
+    color: #0746A6;
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius:30px;
+    background: #0D5BEA;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    border-color: #07357B;
+    transition: .5s;
+}
+.signup{
+    margin: 20px 0px ;
+    text-align: center;
+    font-size: 15px;
+    color:#17758C;
+}
+.signup a{
+    color: #07357B;
+    text-decoration: none;
+}
+.signup a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
