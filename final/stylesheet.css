@@ -1,0 +1,56 @@
+body{
+	background-image: url(images/5.jpg);
+}
+
+.a h1{
+	
+	margin-top: 10%;
+	padding: 10%;
+	font-size: 80px;
+	color: #fff
+}
+
+.second{
+
+	text-align: center;
+	font-size: 50px;
+	padding: 5%;
+}
+
+.b{
+
+	font-size: 30px;
+	padding: 5%;
+}
+
+.bg{
+
+	background-color: red;
+	text-align: center;
+
+	font-size: 50px;
+}
+
+.con
+{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: #fff;
+
+
+}
+
+.con h1{
+	font-size: 80px;
+}
+
+.btn{
+	margin-top: %;
+	font-size: 50px;
+	border-radius: 5%;
+}
+
+.bb{
+	font-size: 30px;
+	margin-top: 5%;
+}

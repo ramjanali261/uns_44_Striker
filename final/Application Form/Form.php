@@ -1,0 +1,219 @@
+<?php
+
+session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship_Student_Reg_Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+            <?php
+
+                if(isset($_POST['submit'])){
+
+                    $First_Name = mysqli_real_escape_string($con , $_POST['First_Name']);
+                    $Last_Name = mysqli_real_escape_string($con , $_POST['Last_Name']);
+                    $DOB = mysqli_real_escape_string($con , $_POST['DOB']);
+                    $gender = mysqli_real_escape_string($con , $_POST['gender']);
+                    $relegion = mysqli_real_escape_string($con , $_POST['relegion']);
+                    $relegion = mysqli_real_escape_string($con , $_POST['relegion']);
+
+
+
+
+
+
+                }
+            ?>
+
+
+
+
+
+
+    <!-- #################  OUTER BOX  ################  -->
+    <div class="outer_box">
+        <h1 id="application" style="color: black;">Application Form</h1>
+
+
+        <!-- ###################### GENERAL INFORMATION ##############  -->
+        <div class="form_container1">
+
+
+            <!-- ************** PHOTO ************  -->
+            <div class="icon">
+                <input type="image" src="./Img/icon.png" alt="Submit"><br>
+                <!-- <label for="First_Name">Upload photo:</label> -->
+            </div>
+
+
+            <h2 style="color: black;"><u>General Information</u></h2>
+
+
+            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+
+                <!-- **************FIRST NAME************  -->
+                <div class="form-group">
+                    <label for="First_Name">First Name:</label>
+                    <input type="text" id="First_Name" name="First_Name" required>
+                </div>
+
+                <!-- ******************LAST NAME************  -->
+                <div class="form-group">
+                    <label for="Last_Name">Last Name:</label>
+                    <input type="text" id="Last_Name" name="Last_Name" required>
+                </div>
+
+                <!-- *************** DATE OF BIRTH ************ -->
+                <div class="form-group">
+                    <label for="DOB">Birthday:</label>
+                    <input type="date" id="DOB" name="DOB" placeholder="10/11/2000" required>
+                </div>
+
+                <!-- ********************* GENDER*************************  -->
+                <div>
+                    <label for="Gender">Gender:</label><br>
+                    <class class="radio-container">
+
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </class>
+                </div>
+
+                <!-- ******************** RELIGION ************************** -->
+                <div class="form-group">
+                    <label for="Religion">Religion:</label>
+                    <input list="Religion" placeholder="Choose your option">
+                    <datalist id="Religion">
+                        <option name="relegion" value="Hindu"></option>
+                        <option name="relegion" value="Muslim"></option>
+                        <option name="relegion" value="Christian"></option>
+                        <option name="relegion" value="Sikh"></option>
+                        <option name="relegion" value="Parsi"></option>
+                        <option name="relegion" value="Jain"></option>
+                        <option name="relegion" value="Buddhist"></option>
+                        <option name="relegion" value="Others"></option>
+                    </datalist>
+                </div>
+
+                <!-- ******************* CATEGORY **************  -->
+                <div class="form-group">
+                    <label for="Category">Community/Category:</label>
+                    <input list="Category" required>
+                    <datalist id="Category">
+                        <option value="SC"></option>
+                        <option value="ST"></option>
+                        <option value="OBC"></option>
+                        <option value="GENERAL"></option>
+                        <option value="ST-PVGT"></option>
+                        <option value="APST"></option>
+                    </datalist>
+                </div>
+
+                <!-- **************FATHER NAME************  -->
+                <div class="form-group">
+                    <label for="Father_Name">Father Name:</label>
+                    <input type="text" id="Father_Name" name="Father_Name">
+                </div>
+
+                <!-- **************MOTHER NAME************  -->
+                <div class="form-group">
+                    <label for="Mother_Name">Mother Name:</label>
+                    <input type="text" id="Mother_Name" name="Mother_Name">
+                </div>
+
+                <!-- **************INCOME************  -->
+                <div class="form-group">
+                    <label for="Income">Annual Family Income:</label>
+                    <input type="number" id="Income" name="Income" required>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- ########################### ACADEMIC DETAILS ################ -->
+        <div class="form_container2">
+            <h2 style="color: black;"><u>Academic Details</u></h2>
+            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+                <!-- **************INSTITUTE NAME************  -->
+                <div class="form-group">
+                    <label for="Institute_Name">Institute Name:</label>
+                    <input type="text" id="Institute_Name" name="Institute_Name" required>
+                </div>
+
+                <!-- **************PRESENT CLASS/COURSE************  -->
+                <div class="form-group">
+                    <label for="course">Present Class/Course:</label>
+                    <input type="text" id="course" name="course" required>
+                </div>
+
+                <!-- **************PRESENT CLASS/COURSE YEAR************  -->
+                <div class="form-group">
+                    <label for="course_year">Present Class/Course Year:</label>
+                    <input type="number" id="course_year" name="course_year" required>
+                </div>
+
+
+                <!-- **************12th CLASS ROLL NO. ************  -->
+                <div class="form-group">
+                    <label for="Roll_No">12th Class Roll_No:</label>
+                    <input type="number" id="Roll_No" name="Roll_No" required>
+                </div>
+
+                <!-- **************12th BOARD NAME ************  -->
+                <div class="form-group">
+                    <label for="Board_Name">12th Board_Name:</label>
+                    <input type="text" id="Board_Name" name="Board_Name" required>
+                </div>
+
+                <!-- ************** YEAR OF PASSING ************  -->
+                <div class="form-group">
+                    <label for="Year_Of_Passing">12th Class Year Of Passing:</label>
+                    <input type="number" id="Year_Of_Passing" name="Year_Of_Passing" required>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- ########################### BANK DETAILS ################ -->
+        <div class="form_container3">
+            <h2 style="color: black;"><u>Bank Details</u></h2>
+            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+
+                <!-- **************IFSC CODE************  -->
+                <div class="form-group">
+                    <label for="IFSC_Code">IFSC Code:</label>
+                    <input type="text" id="IFSC_Code" name="IFSC_Code" required>
+                </div>
+
+
+                <!-- **************BANK ACCOUNT NUMBER************  -->
+                <div class="form-group">
+                    <label for="Bank_Account_Number">Bank Account Number:</label>
+                    <input type="text" id="Bank_Account_Number" name="Bank_Account_Number" required>
+                </div>
+
+            </form>
+        </div>
+
+
+        <!-- ########################### BUTTON ################ -->
+        <form action="">
+            <button type="button" onclick="alert('Your Form Has Been Submitted')">Save & Continue</button>
+        </form>
+</body>
+
+</html>

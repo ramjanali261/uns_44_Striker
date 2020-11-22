@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(./images/14.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#application {
+    padding: 10px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-size: 50px;
+}
+
+button {
+    padding: 15px;
+    margin: 5px auto;
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: rgba(41, 36, 87, 0.76);
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(23, 23, 24, 0.2);
+    color: white;
+}
+
+.outer_box {
+    border: 2px solid black;
+    display: block;
+    border: 1px solid wheat;
+    margin: 20px auto;
+    padding: 20px 20px;
+    color: rgb(12, 12, 12);
+    width: 83%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 5px 16px 10px 5px;
+    background-image: url(./images/7.jpg);
+    opacity: 95%;
+    background-repeat: no-repeat;
+}
+
+.form_container1 {
+    border: 2px solid black;
+    padding: 25px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid rgb(26, 25, 23);
+    color: rgb(12, 12, 12);
+    width: 83%;
+    border-radius: 10px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    background-color: rgba(23, 23, 24, 0.2);
+}
+
+.form_container1:hover {
+    background-color: rgba(23, 23, 24, 0.2);
+    transition-property: transform, background-color;
+    transition-duration: 1s;
+}
+
+.form-group input {
+    width: 250px;
+    padding: 4px;
+    border: 1px solid black;
+    margin: 3px auto;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+input {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    height: 16px;
+    width: 16px;
+    margin-left: 32px;
+}
+
+.radio-container label {
+    text-align: left;
+    width: 200px;
+}
+
+.radio-container input {
+    margin-left: 200px;
+}
+
+h2 {
+    padding: 7px;
+    margin: 5px;
+}
+
+.icon {
+    border: 1px solid black;
+    display: flex;
+    float: right;
+    margin: 40px;
+    padding: 30px 30px;
+    color: rgb(12, 12, 12);
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
