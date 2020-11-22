@@ -15,7 +15,7 @@ body{
     left: 50%;
     background: #D5DBDB;
     width: 540px;
-    height: 350px;
+    height: 400px;
     transform: translate(-50%, -50%);
     border-radius: 10px;
 }
@@ -76,5 +76,14 @@ input[type="button"]{
     padding: 15px;
     border-radius: 20px;
     font-size: 15px;
-    width: max-content;
+    width: 40%;
+}
+
+#a{
+    width: 95%;
+    margin: 10px;
+    margin-right: 10px;
+}
+#a:hover{
+    background: #ccffff;
 }
